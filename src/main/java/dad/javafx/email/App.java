@@ -2,6 +2,7 @@ package dad.javafx.email;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class App extends Application {
@@ -18,6 +19,7 @@ public class App extends Application {
 		Stage stage = new Stage();
 		stage.setTitle("Enviar Email");
 		stage.setScene(scene);
+		stage.getIcons().add(new Image("email-send-icon-32x32.png"));
 		stage.show();
 	}
 
