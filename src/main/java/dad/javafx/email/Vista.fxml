@@ -38,12 +38,12 @@
       <Label text="Destinatario (To):" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
       <Label text="Asunto (Subject):" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
       <TextArea fx:id="textMensaje" prefHeight="200.0" prefWidth="200.0" promptText="Mensaje" GridPane.columnSpan="5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
-      <Button fx:id="botonVaciar" mnemonicParsing="false" text="Vaciar" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-      <Button fx:id="botonCerrar" mnemonicParsing="false" text="Cerrar" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <Button fx:id="botonVaciar" mnemonicParsing="false" onAction="#vaciar" text="Vaciar" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Button fx:id="botonCerrar" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" GridPane.columnIndex="5" GridPane.rowIndex="2" />
       <TextField fx:id="tfPuerto" promptText="Puerto" GridPane.columnIndex="4" />
       <TextField fx:id="tfSmtp" promptText="Nombre o Ip del servidor" GridPane.columnIndex="1" GridPane.columnSpan="3" />
       <TextField fx:id="tfRemitente" promptText="Email del remitente" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-      <Button fx:id="botonEnviar" mnemonicParsing="false" text="Enviar" GridPane.columnIndex="5" />
+      <Button fx:id="botonEnviar" mnemonicParsing="false" onAction="#enviar" text="Enviar" GridPane.columnIndex="5" />
       <PasswordField fx:id="pfContrasenia" promptText="Contraseña" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" />
       <TextField fx:id="tfDestinatario" promptText="Email del destinatario" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="3" />
       <TextField fx:id="tfAsunto" promptText="Asunto del mensaje" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="4" />

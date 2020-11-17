@@ -1,7 +1,5 @@
 package dad.javafx.email;
 
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -14,7 +12,7 @@ public class Modelo {
 	private StringProperty valorDestinatario = new SimpleStringProperty();
 	private StringProperty valorAsunto = new SimpleStringProperty();
 	private StringProperty valorMensaje = new SimpleStringProperty();
-	private BooleanProperty valorSSL = new SimpleBooleanProperty();
+	
 	public final StringProperty valorSmtpProperty() {
 		return this.valorSmtp;
 	}
@@ -97,17 +95,5 @@ public class Modelo {
 	
 	public final void setValorMensaje(final String valorMensaje) {
 		this.valorMensajeProperty().set(valorMensaje);
-	}
-	
-	public final BooleanProperty valorSSLProperty() {
-		return this.valorSSL;
-	}
-	
-	public final boolean isValorSSL() {
-		return this.valorSSLProperty().get();
-	}
-	
-	public final void setValorSSL(final boolean valorSSL) {
-		this.valorSSLProperty().set(valorSSL);
 	}
 }
